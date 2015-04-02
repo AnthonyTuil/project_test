@@ -7,9 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MBProgressHUD.h"
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController <UIImagePickerControllerDelegate,UINavigationControllerDelegate>{
+    UIImagePickerController *mainViewController;
+    UIImageView *imageView;
+    UIToolbar *toolBar;
+    UIImage *background;
+    BOOL hasLoadedCamera;
+    UIButton *take;
+    UIActivityIndicatorView *loader;
+    UIView *blackView;
+    UIButton *dismiss;
+    UIButton *flash;
+    UIButton *doneButton;
+}
 
 @end
 
